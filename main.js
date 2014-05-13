@@ -3644,8 +3644,10 @@ items.forEach(function(item){
   })
 });
 
-items.forEach(function(item) {
-  //$('.container')item.price   
+
+items.map(function(item) {
+  var money = '<p>' + item.price + '</p>'
+  $('.price').append(money)   
 });
 
 $(".box").click(function() {
