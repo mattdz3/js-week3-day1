@@ -3645,14 +3645,19 @@ items.forEach(function(item){
 });
 
 items.forEach(function(item) {
-  item.price.forEach(function(money) {
-    var iCost = money.price
-    $(".container").sort(iCost)
-  })
+  //$('.container')item.price   
 });
 
+$(".box").click(function() {
+  $(".box").text("Board Games Rule!");
+});
 
+$('.box').click(function() {
+    $('.container').append('<div class="box"></div>')
+  })
 
-
+$('.box').hover(function(){
+  $(this).addClass('hover')
+})
 
 
